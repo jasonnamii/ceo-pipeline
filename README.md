@@ -2,6 +2,11 @@
 
 **CEO's blueprint to roadmap to action list — auto-cascade with team handoff briefs and category assignment.**
 
+## Prerequisites
+
+- **Obsidian Vault** — roadmaps and action lists output as Obsidian-compatible `.md` by default
+- **Claude Cowork or Claude Code** environment
+
 ## Goal
 
 Strategic vision without executable actions remains a dream. CEO-Pipeline transforms a high-level blueprint or roadmap into an action list automatically categorized by domain (planning, design, development) with team handoff briefs for each action. The "shower effect" ensures ideas flow from thinking to doing.
