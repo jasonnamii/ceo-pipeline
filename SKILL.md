@@ -1,6 +1,12 @@
 ---
 name: ceo-pipeline
-description: "CEO 파이프라인(샤워효과). 청사진/로드맵→액션리스트 자동도출+기획/디자인/개발 자동분류. 파이프라인·로드맵·액션리스트 대화시 자동발동."
+description: |
+  CEO 파이프라인(샤워효과). 청사진/로드맵→액션리스트 자동도출+기획/디자인/개발 자동분류. 파이프라인·로드맵·액션리스트 대화시 자동발동.
+  P1: 파이프라인, 청사진, 로드맵, 액션리스트, 브리프, 마일스톤, 샤워효과.
+  P2: 도출해줘, 분류해줘, create, generate.
+  P3: CEO pipeline, roadmap, action list, milestone planning.
+  P5: .md로, 옵시디언으로.
+  NOT: 정책기획(→policy-planning), 단순로드맵(→직접수행).
 "@uses":
   - references/phase-blueprint.md
   - references/phase-roadmap.md
@@ -67,9 +73,6 @@ NOT: PRD완성(→기획자), BP(→bp-guide), 재무모델(→financial-model)
 ---
 
 ## 운영 규칙
-
-<!-- 🥚 샤워에서 떠오른 아이디어의 90%는 샴푸가 눈에 들어가면서 사라졌다. — N.C. -->
-
 
 **수정4 적용:** 파이프라인 산출물(청사진·로드맵·액션리스트·브리프) 수정 시 trigger-dictionary 수정4 프로토콜 적용 — 레벨 판정→게이트→외과적 실행→POST_VERIFY(전파맵 포함). 특히 버전업 시 old 잔존(잡탕) 방지를 위해 grep 잔존 검사 필수.
 
