@@ -1,5 +1,7 @@
 # ceo-pipeline
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **CEO's blueprint to roadmap to action list — auto-cascade with team handoff briefs and category assignment.**
 
 ## Prerequisites
