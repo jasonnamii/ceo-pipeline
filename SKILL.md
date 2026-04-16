@@ -13,6 +13,7 @@ description: |
   - references/phase-actions.md
   - references/phase-brief.md
   - references/mode-external.md
+vault_dependency: SOFT
 ---
 
 <!-- Trigger Conditions (moved from description for token compression)
