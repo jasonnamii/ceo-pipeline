@@ -27,7 +27,28 @@ NOT: PRD완성(→기획자), BP(→bp-guide), 재무모델(→financial-model)
 
 대표가 청사진→로드맵을 구성하면, 거기서 필요한 액션 아이템이 도메인 전문지식을 바탕으로 자동 도출되고, 각 아이템이 기획/디자인/개발 파트로 자동 분류되어 팀에 넘겨지는 전 과정.
 
+
+## Skill Boundaries
+
+- **하는 것** — CEO 파이프라인(샤워효과).
+- **안 하는 것** — 정책기획(→policy-planning), 단순로드맵(→직접수행).
+
 ---
+
+## When to Use
+
+- 사용자가 "도출해줘", "분류해줘", "터보로 도출해줘", "create", "generate" 같은 표현으로 발동
+- 도메인 작업이 필요한 시점
+- **안 쓸 때** — 정책기획(→policy-planning), 단순로드맵(→직접수행).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+
 
 ## 라우팅
 
@@ -198,9 +219,43 @@ NOT: PRD완성(→기획자), BP(→bp-guide), 재무모델(→financial-model)
 
 ---
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/ceo-pipeline_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | .md로, 옵시디언으로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/ceo-pipeline/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/mode-external.md` | mode external | 해당 단계 진입 시 |
+| `references/phase-actions.md` | phase actions | 해당 단계 진입 시 |
+| `references/phase-blueprint.md` | phase blueprint | 해당 단계 진입 시 |
+| `references/phase-brief.md` | phase brief | 해당 단계 진입 시 |
+| `references/phase-roadmap.md` | phase roadmap | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `policy-planning`
+- 후속 작업 → `직접수행`
+
+## Failure Modes (Gotchas)
 
 - **과잉 서술(오바):** 액션리스트 아이템을 "기획서처럼" 장황하게 서술하는 실수. 형 피드백으로 v3.0→v3.1 전면 재작성한 전례. 액션 아이템은 담담하고 간결하게 — 1아이템 2~3줄 이내.
 - **ASCII 코드블록 사용:** 아이템 카드(§3d)나 크로스맵(§3e)을 ASCII 박스(┌──┐)로 그리는 실수. 코드블록 ASCII 산출물 사용 금지. 옵시디언 산출물은 HTML div 카드(html-div-style 또는 apple-design-style) 또는 마크다운 테이블 사용.
 - **샤워효과 미작동:** 청사진/로드맵만 구성하면 액션리스트가 자동 도출(캐스케이드)되어야 하는데, 도메인 전문지식 없이 기계적으로 쪼개는 실수. ①갭탐지→②도메인도출→③파트분류 3단계를 반드시 순차 수행.
 - **수정4 미적용:** 기존 산출물(청사진·로드맵·액션리스트) 버전업 시 수정4 프로토콜 없이 직접 수정하여 old 잔존(잡탕)·중복삽입이 발생하는 경우. 레벨 판정→게이트→외과적 실행→POST_VERIFY 필수.
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
