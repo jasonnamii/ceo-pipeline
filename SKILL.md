@@ -1,5 +1,6 @@
 ---
 name: ceo-pipeline
+version: 1.0
 description: |
   CEO 파이프라인(샤워효과). 청사진/로드맵→액션리스트 자동도출+기획/디자인/개발 자동분류. 파이프라인·로드맵·액션리스트 대화시 자동발동. 일반/TURBO(캐스케이드 도메인도출 3트랙 병렬 Agent) 2모드. 트리거: 파이프라인, 청사진, 로드맵, 액션리스트, 브리프, 마일스톤, 샤워효과, 터보파이프라인, 파이프라인 터보, TURBO, 도출해줘, 분류해줘, 터보로 도출해줘, create, generate, turbo cascade. NOT: 정책기획(→policy-planning), 단순로드맵(→직접수행).
 ---
